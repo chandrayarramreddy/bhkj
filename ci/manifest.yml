@@ -1,0 +1,12 @@
+---
+applications:
+- name: microservice-1
+  memory: 1GB
+  path: target\microservice-1.jar
+  instances: 1
+  random-route: true
+services:
+- service-registry
+- circuit-breaker
+- config-server
+#buildpack: java_buildpack
